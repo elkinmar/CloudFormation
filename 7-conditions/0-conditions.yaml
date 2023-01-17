@@ -45,3 +45,6 @@ Outputs:
     Condition: CreateProdResources
     Value:
       !Ref NewVolume
+  PublicIP:
+    Description: Public IP of the EC2 Instance
+    Value: !GetAtt EC2Instance.PublicIp
